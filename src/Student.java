@@ -31,17 +31,17 @@ public class Student {
     }
     
     public void addQuiz(int score){
-        if(score <= 10){
+        if(score <= 10 && score >= 0){
             quizzeScore+=score;
             quizzesNumber++;
         }
         else{
             System.out.println("The maximum score for each quiz is 10");
-        }
-        
+        } 
     }
     
     public double getAverageScore(){
-        return quizzeScore / quizzesNumber;
+        return quizzeScore / (double)quizzesNumber;
     }
+    
 }

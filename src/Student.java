@@ -35,6 +35,10 @@ public class Student {
             quizzeScore+=score;
             quizzesNumber++;
         }
+        else{
+            System.out.println("The maximum score for each quiz is 10");
+        }
+        
     }
     
     public double getAverageScore(){
